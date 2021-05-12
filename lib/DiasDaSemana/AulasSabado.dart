@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 //import 'package:intent/extra.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:url_launcher/url_launcher.dart';
 import 'package:intent/intent.dart' as android_intent;
 //import 'package:intent/extra.dart' as android_extra;
 //import 'package:intent/typedExtra.dart' as android_typedExtra;
@@ -33,11 +35,16 @@ class AulasSabado extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/94056241793",
-                          {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/94056241793?pwd=SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/94056241793",
+                            {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      }
                     },
                     child: Text('8h - Hinos dos Últimos Dias',
                         style: TextStyle(
@@ -58,11 +65,16 @@ class AulasSabado extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/95927244033",
-                          {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/95927244033",
+                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      }
                     },
                     child: Text("9h - Pregar Meu Evangelho",
                         style: TextStyle(fontSize: 16),
@@ -81,11 +93,16 @@ class AulasSabado extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/94056241793",
-                          {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/94056241793?pwd=SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/94056241793",
+                            {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      }
                     },
                     child: Text('10h30 - Doutrina & Convênios',
                         style: TextStyle(fontSize: 16),
@@ -104,11 +121,16 @@ class AulasSabado extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/95927244033",
-                          {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/95927244033",
+                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      }
                     },
                     child: Text('14h - A Família Eterna',
                         style: TextStyle(fontSize: 16),
@@ -127,11 +149,16 @@ class AulasSabado extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/94056241793",
-                          {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/94056241793?pwd=SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/94056241793",
+                            {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      }
                     },
                     child: Text('15h - Doutrinas do Evangelho, Parte 1',
                         style: TextStyle(fontSize: 16),
