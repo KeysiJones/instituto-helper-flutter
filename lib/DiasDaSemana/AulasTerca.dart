@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+//import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 //import 'package:intent/extra.dart';
 import 'package:intent/intent.dart' as android_intent;
+import 'package:url_launcher/url_launcher.dart';
 //import 'package:intent/extra.dart' as android_extra;
 //import 'package:intent/typedExtra.dart' as android_typedExtra;
 //import 'package:intent/action.dart' as android_action;
@@ -33,11 +36,16 @@ class AulasTerca extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/95927244033",
-                          {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/95927244033",
+                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      }
                     },
                     child: Text('9h - Pregar Meu Evangelho',
                         style: TextStyle(
@@ -58,11 +66,16 @@ class AulasTerca extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/95927244033",
-                          {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/95927244033",
+                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      }
                     },
                     child: Text("10h - A Família Eterna",
                         style: TextStyle(fontSize: 16),
@@ -81,11 +94,16 @@ class AulasTerca extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/94056241793",
-                          {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/94056241793?pwd=SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/94056241793",
+                            {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      }
                     },
                     child: Text('18h30 - Doctrine And Covenants',
                         style: TextStyle(fontSize: 16),
@@ -104,11 +122,16 @@ class AulasTerca extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/99543622475",
-                          {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/95927244033",
+                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                      }
                     },
                     child: Text('20h - Doutrina & Convênios',
                         style: TextStyle(fontSize: 16),
@@ -127,11 +150,16 @@ class AulasTerca extends StatelessWidget {
                           backgroundColor: Colors.white,
                           textColor: Colors.black);
 
-                      openUrl(
-                          "us.zoom.videomeetings",
-                          "zoom.us",
-                          "/j/94056241793",
-                          {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      if (kIsWeb) {
+                        launch(
+                            "https://zoom.us/j/94056241793?pwd=SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09");
+                      } else {
+                        openUrl(
+                            "us.zoom.videomeetings",
+                            "zoom.us",
+                            "/j/94056241793",
+                            {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                      }
                     },
                     child: Text('21h - O Livro de Mórmon em Japonês',
                         style: TextStyle(fontSize: 16),
