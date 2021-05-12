@@ -129,7 +129,7 @@ class AulasTerca extends StatelessWidget {
                         openUrl(
                             "us.zoom.videomeetings",
                             "zoom.us",
-                            "/j/95927244033",
+                            "/j/99543622475",
                             {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
                       }
                     },

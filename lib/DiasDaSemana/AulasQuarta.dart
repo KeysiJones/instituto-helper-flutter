@@ -95,13 +95,13 @@ class AulasQuarta extends StatelessWidget {
 
                       if (kIsWeb) {
                         launch(
-                            "https://zoom.us/j/94056241793?pwd=SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09");
+                            "https://zoom.us/j/93337211696?pwd=dTVreXJLQXFzdVNrTUp0aVpZUzdJUT09");
                       } else {
                         openUrl(
                             "us.zoom.videomeetings",
                             "zoom.us",
-                            "/j/94056241793",
-                            {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
+                            "/j/93337211696",
+                            {"pwd": "dTVreXJLQXFzdVNrTUp0aVpZUzdJUT09"});
                       }
                     },
                     child: Text('20h - Ensinamentos de Russel M. Nelson',

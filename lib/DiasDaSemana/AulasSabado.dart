@@ -67,7 +67,7 @@ class AulasSabado extends StatelessWidget {
 
                       if (kIsWeb) {
                         launch(
-                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                            "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
                       } else {
                         openUrl(
                             "us.zoom.videomeetings",
@@ -123,7 +123,7 @@ class AulasSabado extends StatelessWidget {
 
                       if (kIsWeb) {
                         launch(
-                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                            "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
                       } else {
                         openUrl(
                             "us.zoom.videomeetings",
