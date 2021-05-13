@@ -17,7 +17,8 @@ class AulasSabado extends StatelessWidget {
         title: Text("Aulas de sábado"),
       ),
       body: Center(
-        child: Column(
+        child: SingleChildScrollView(
+            child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -164,7 +165,7 @@ class AulasSabado extends StatelessWidget {
                         style: TextStyle(fontSize: 16),
                         textAlign: TextAlign.center)))
           ],
-        ),
+        )),
       ),
     );
   }

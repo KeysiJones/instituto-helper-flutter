@@ -14,7 +14,8 @@ class DiasSemana extends StatelessWidget {
         title: Text("Dias de Instituto"),
       ),
       body: Center(
-        child: Column(
+        child: SingleChildScrollView(
+            child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -80,7 +81,7 @@ class DiasSemana extends StatelessWidget {
                         style: TextStyle(fontSize: 18),
                         textAlign: TextAlign.center)))
           ],
-        ),
+        )),
       ),
     );
   }

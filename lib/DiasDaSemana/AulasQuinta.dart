@@ -17,7 +17,8 @@ class AulasQuinta extends StatelessWidget {
         title: Text("Aulas de quinta"),
       ),
       body: Center(
-        child: Column(
+        child: SingleChildScrollView(
+            child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -108,7 +109,7 @@ class AulasQuinta extends StatelessWidget {
                         style: TextStyle(fontSize: 16),
                         textAlign: TextAlign.center))),
           ],
-        ),
+        )),
       ),
     );
   }
