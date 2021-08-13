@@ -13,104 +13,133 @@ class AulasQuinta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Aulas de quinta"),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          //crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Container(
-                width: double.infinity,
-                height: 50,
-                margin:
-                    EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
-                child: ElevatedButton(
-                    onPressed: () {
-                      Fluttertoast.showToast(
-                          msg: "Abrindo o zoom, aguarde...",
-                          toastLength: Toast.LENGTH_LONG,
-                          gravity: ToastGravity.BOTTOM,
-                          backgroundColor: Colors.white,
-                          textColor: Colors.black);
-
-                      if (kIsWeb) {
-                        launch(
-                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
-                      } else {
-                        openUrl(
-                            "us.zoom.videomeetings",
-                            "zoom.us",
-                            "/j/95927244033",
-                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
-                      }
-                    },
-                    child: Text('19h - A Família Eterna',
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                        textAlign: TextAlign.center))),
-            Container(
-                width: double.infinity,
-                height: 50,
-                margin:
-                    EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
-                child: ElevatedButton(
-                    onPressed: () {
-                      Fluttertoast.showToast(
-                          msg: "Abrindo o zoom, aguarde...",
-                          toastLength: Toast.LENGTH_LONG,
-                          gravity: ToastGravity.BOTTOM,
-                          backgroundColor: Colors.white,
-                          textColor: Colors.black);
-
-                      if (kIsWeb) {
-                        launch(
-                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
-                      } else {
-                        openUrl(
-                            "us.zoom.videomeetings",
-                            "zoom.us",
-                            "/j/95927244033",
-                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
-                      }
-                    },
-                    child: Text("20h - Pregar Meu Evangelho",
-                        style: TextStyle(fontSize: 16),
-                        textAlign: TextAlign.center))),
-            Container(
-                width: double.infinity,
-                height: 50,
-                margin:
-                    EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
-                child: ElevatedButton(
-                    onPressed: () {
-                      Fluttertoast.showToast(
-                          msg: "Abrindo o zoom, aguarde...",
-                          toastLength: Toast.LENGTH_LONG,
-                          gravity: ToastGravity.BOTTOM,
-                          backgroundColor: Colors.white,
-                          textColor: Colors.black);
-
-                      if (kIsWeb) {
-                        launch(
-                            "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
-                      } else {
-                        openUrl(
-                            "us.zoom.videomeetings",
-                            "zoom.us",
-                            "/j/95927244033",
-                            {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
-                      }
-                    },
-                    child: Text('22h - Doutrina & Convênios',
-                        style: TextStyle(fontSize: 16),
-                        textAlign: TextAlign.center))),
-          ],
+        appBar: AppBar(
+          title: Text("Aulas de quinta"),
         ),
-      ),
-    );
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              //crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                    width: double.infinity,
+                    height: 50,
+                    margin: EdgeInsets.only(
+                        top: 20, bottom: 20, left: 20, right: 20),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                              msg: "Abrindo o zoom, aguarde...",
+                              toastLength: Toast.LENGTH_LONG,
+                              gravity: ToastGravity.BOTTOM,
+                              backgroundColor: Colors.white,
+                              textColor: Colors.black);
+
+                          if (kIsWeb) {
+                            launch(
+                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                          } else {
+                            openUrl(
+                                "us.zoom.videomeetings",
+                                "zoom.us",
+                                "/j/95927244033",
+                                {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                          }
+                        },
+                        child: Text('19h - Jesus Cristo e o Evangelho Eterno',
+                            style: TextStyle(
+                              fontSize: 16,
+                            ),
+                            textAlign: TextAlign.center))),
+                Container(
+                    width: double.infinity,
+                    height: 50,
+                    margin: EdgeInsets.only(
+                        top: 20, bottom: 20, left: 20, right: 20),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                              msg: "Abrindo o zoom, aguarde...",
+                              toastLength: Toast.LENGTH_LONG,
+                              gravity: ToastGravity.BOTTOM,
+                              backgroundColor: Colors.white,
+                              textColor: Colors.black);
+
+                          if (kIsWeb) {
+                            launch(
+                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                          } else {
+                            openUrl(
+                                "us.zoom.videomeetings",
+                                "zoom.us",
+                                "/j/95927244033",
+                                {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                          }
+                        },
+                        child: Text("20h15 - Doctrine And Covenants",
+                            style: TextStyle(fontSize: 16),
+                            textAlign: TextAlign.center))),
+                Container(
+                    width: double.infinity,
+                    height: 50,
+                    margin: EdgeInsets.only(
+                        top: 20, bottom: 20, left: 20, right: 20),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                              msg: "Abrindo o zoom, aguarde...",
+                              toastLength: Toast.LENGTH_LONG,
+                              gravity: ToastGravity.BOTTOM,
+                              backgroundColor: Colors.white,
+                              textColor: Colors.black);
+
+                          if (kIsWeb) {
+                            launch(
+                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                          } else {
+                            openUrl(
+                                "us.zoom.videomeetings",
+                                "zoom.us",
+                                "/j/95927244033",
+                                {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                          }
+                        },
+                        child: Text('20h15 - Pregar meu Evangelho',
+                            style: TextStyle(fontSize: 16),
+                            textAlign: TextAlign.center))),
+                Container(
+                    width: double.infinity,
+                    height: 50,
+                    margin: EdgeInsets.only(
+                        top: 20, bottom: 20, left: 20, right: 20),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                              msg: "Abrindo o zoom, aguarde...",
+                              toastLength: Toast.LENGTH_LONG,
+                              gravity: ToastGravity.BOTTOM,
+                              backgroundColor: Colors.white,
+                              textColor: Colors.black);
+
+                          if (kIsWeb) {
+                            launch(
+                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                          } else {
+                            openUrl(
+                                "us.zoom.videomeetings",
+                                "zoom.us",
+                                "/j/95927244033",
+                                {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                          }
+                        },
+                        child: Text('22h - Doutrina & Convênios',
+                            style: TextStyle(fontSize: 16),
+                            textAlign: TextAlign.center))),
+              ],
+            ),
+          ),
+        ));
   }
 
   void openUrl(String packageName, String baseUrl, String path,

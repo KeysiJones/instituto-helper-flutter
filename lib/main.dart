@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.pink,
       ),
       home: MyHomePage(title: 'Instituto Porto Alegre'),
     );
@@ -80,7 +80,8 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Center(child: Text(widget.title)),
       ),
-      body: Center(
+      body: SingleChildScrollView(
+          child: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -123,10 +124,27 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: () async => await launch(
                       "https://docs.google.com/forms/d/e/1FAIpQLSd0y43FbhjFRI62qL42DezLBjtwC6nhubskd_JVlxH3js4hbw/viewform")),
               width: double.infinity,
-            )
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
+              height: 50.0,
+              child: ElevatedButton(
+                  child: Text('Apoiar o desenvolvedor **',
+                      style: TextStyle(fontSize: 20)),
+                  onPressed: () async => await launch(
+                      "https://docs.google.com/forms/d/e/1FAIpQLSd0y43FbhjFRI62qL42DezLBjtwC6nhubskd_JVlxH3js4hbw/viewform")),
+              width: double.infinity,
+            ),
+            Container(
+                margin:
+                    EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
+                height: 80,
+                child: Text(
+                    '**App desenvolvido por Keysi Jones, aluno do Instituto Porto Alegre e engenheiro de software frontend por paixão.',
+                    style: TextStyle(fontSize: 14)))
           ],
         ),
-      ),
+      )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Fluttertoast.showToast(
