@@ -128,33 +128,35 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
               height: 50.0,
               child: ElevatedButton(
-                  child: Text('Apoiar o desenvolvedor **',
+                  child: Text('Contato do desenvolvedor **',
                       style: TextStyle(fontSize: 20)),
                   onPressed: () async => await launch(
-                      "https://docs.google.com/forms/d/e/1FAIpQLSd0y43FbhjFRI62qL42DezLBjtwC6nhubskd_JVlxH3js4hbw/viewform")),
+                      "https://wa.me/5551985236176?text=Oi%20Keysi")),
               width: double.infinity,
             ),
             Container(
                 margin:
                     EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
                 height: 80,
-                child: Text(
-                    '**App desenvolvido por Keysi Jones, aluno do Instituto Porto Alegre e engenheiro de software frontend por paixão.',
-                    style: TextStyle(fontSize: 14)))
+                child: Column(children: [
+                  Text(
+                      '**App não oficial desenvolvido por Keysi Jones.\n\n**Você pode ajudar a manter este aplicativo no ar recomendando o meu trabalho como desenvolvedor de software.',
+                      style: TextStyle(fontSize: 14)),
+                ])),
           ],
         ),
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Fluttertoast.showToast(
-              msg: '"Faça do Instituto uma prioridade"\n - Thomas S. Monson',
+              msg: 'Se gostou do app compartilha ele com outros alunos !',
               toastLength: Toast.LENGTH_LONG,
               gravity: ToastGravity.BOTTOM,
               backgroundColor: Colors.pink,
               textColor: Colors.white);
         },
-        tooltip: 'Especial',
-        child: Icon(Icons.sentiment_very_satisfied),
+        tooltip: 'Dá uma força aí',
+        child: Icon(Icons.thumb_up),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
