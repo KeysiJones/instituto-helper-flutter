@@ -38,13 +38,13 @@ class AulasQuinta extends StatelessWidget {
 
                           if (kIsWeb) {
                             launch(
-                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                                "https://zoom.us/j/94056241793?pwd=SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09");
                           } else {
                             openUrl(
                                 "us.zoom.videomeetings",
                                 "zoom.us",
-                                "/j/95927244033",
-                                {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
+                                "/j/94056241793",
+                                {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
                           }
                         },
                         child: Text('19h - Jesus Cristo e o Evangelho Eterno',
@@ -68,7 +68,7 @@ class AulasQuinta extends StatelessWidget {
 
                           if (kIsWeb) {
                             launch(
-                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                                "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
                           } else {
                             openUrl(
                                 "us.zoom.videomeetings",
@@ -96,7 +96,7 @@ class AulasQuinta extends StatelessWidget {
 
                           if (kIsWeb) {
                             launch(
-                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                                "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
                           } else {
                             openUrl(
                                 "us.zoom.videomeetings",
@@ -124,7 +124,7 @@ class AulasQuinta extends StatelessWidget {
 
                           if (kIsWeb) {
                             launch(
-                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                                "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
                           } else {
                             openUrl(
                                 "us.zoom.videomeetings",

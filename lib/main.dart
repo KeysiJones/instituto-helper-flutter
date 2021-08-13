@@ -4,8 +4,6 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'dias_semana_widget.dart';
 
-//import 'widgets/dias_semana_widget.dart';
-
 void main() {
   runApp(MyApp());
 }

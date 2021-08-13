@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-//import 'package:intent/extra.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:intent/intent.dart' as android_intent;
-//import 'package:intent/extra.dart' as android_extra;
-//import 'package:intent/typedExtra.dart' as android_typedExtra;
-//import 'package:intent/action.dart' as android_action;
 
 class AulasSabado extends StatelessWidget {
   @override
@@ -47,7 +43,7 @@ class AulasSabado extends StatelessWidget {
                                 {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
                           }
                         },
-                        child: Text('8h - Hinos dos Últimos Dias',
+                        child: Text('8h - O Evangelho e a vida produtiva',
                             style: TextStyle(
                               fontSize: 16,
                             ),
@@ -68,7 +64,7 @@ class AulasSabado extends StatelessWidget {
 
                           if (kIsWeb) {
                             launch(
-                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                                "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
                           } else {
                             openUrl(
                                 "us.zoom.videomeetings",
@@ -105,7 +101,7 @@ class AulasSabado extends StatelessWidget {
                                 {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
                           }
                         },
-                        child: Text('10h30 - Doutrina & Convênios',
+                        child: Text('10h30 - Jesus Cristo e o Evangelho Eterno',
                             style: TextStyle(fontSize: 16),
                             textAlign: TextAlign.center))),
                 Container(
@@ -124,7 +120,7 @@ class AulasSabado extends StatelessWidget {
 
                           if (kIsWeb) {
                             launch(
-                                "https://zoom.us/j/99543622475?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
+                                "https://zoom.us/j/95927244033?pwd=TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09");
                           } else {
                             openUrl(
                                 "us.zoom.videomeetings",
@@ -133,7 +129,7 @@ class AulasSabado extends StatelessWidget {
                                 {"pwd": "TkZLeU1MY2d5eUpqeTJ5WUJTRHlVUT09"});
                           }
                         },
-                        child: Text('14h - A Família Eterna',
+                        child: Text('14h - Doutrina e convênio - Parte 2',
                             style: TextStyle(fontSize: 16),
                             textAlign: TextAlign.center))),
                 Container(
@@ -161,9 +157,9 @@ class AulasSabado extends StatelessWidget {
                                 {"pwd": "SFNmQUIvT0tRaHlDaVYrN3l5bzJVQT09"});
                           }
                         },
-                        child: Text('15h - Doutrinas do Evangelho, Parte 1',
+                        child: Text('15h15 - O dom divino do perdão',
                             style: TextStyle(fontSize: 16),
-                            textAlign: TextAlign.center)))
+                            textAlign: TextAlign.center))),
               ],
             ),
           ),
