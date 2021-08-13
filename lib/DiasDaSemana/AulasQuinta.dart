@@ -16,8 +16,8 @@ class AulasQuinta extends StatelessWidget {
         appBar: AppBar(
           title: Text("Aulas de quinta"),
         ),
-        body: SingleChildScrollView(
-          child: Center(
+        body: Center(
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               //crossAxisAlignment: CrossAxisAlignment.center,

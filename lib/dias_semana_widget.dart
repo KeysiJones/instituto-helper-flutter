@@ -13,8 +13,8 @@ class DiasSemana extends StatelessWidget {
         appBar: AppBar(
           title: Text("Dias de Instituto"),
         ),
-        body: SingleChildScrollView(
-          child: Center(
+        body: Center(
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               //crossAxisAlignment: CrossAxisAlignment.center,

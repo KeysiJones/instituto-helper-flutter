@@ -80,11 +80,13 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Center(child: Text(widget.title)),
       ),
-      body: SingleChildScrollView(
-          child: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+      body: Center(
+          // Center is a layout widget. It takes a single child and positions it
+          // in the middle of the parent.
+          child: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -99,7 +101,6 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
                 width: double.infinity,
@@ -151,8 +152,8 @@ class _MyHomePageState extends State<MyHomePage> {
               msg: '"Faça do Instituto uma prioridade"\n - Thomas S. Monson',
               toastLength: Toast.LENGTH_LONG,
               gravity: ToastGravity.BOTTOM,
-              backgroundColor: Colors.teal,
-              textColor: Colors.black);
+              backgroundColor: Colors.pink,
+              textColor: Colors.white);
         },
         tooltip: 'Especial',
         child: Icon(Icons.sentiment_very_satisfied),

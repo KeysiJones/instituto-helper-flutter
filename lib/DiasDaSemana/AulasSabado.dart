@@ -16,8 +16,8 @@ class AulasSabado extends StatelessWidget {
         appBar: AppBar(
           title: Text("Aulas de sábado"),
         ),
-        body: SingleChildScrollView(
-          child: Center(
+        body: Center(
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               //crossAxisAlignment: CrossAxisAlignment.center,
