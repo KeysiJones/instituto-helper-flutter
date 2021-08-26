@@ -130,8 +130,8 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ElevatedButton(
                   child: Text('Contato do desenvolvedor **',
                       style: TextStyle(fontSize: 20)),
-                  onPressed: () async => await launch(
-                      "https://wa.me/5551985236176?text=Oi%20Keysi")),
+                  onPressed: () async =>
+                      await launch("https://githobby.vercel.app/")),
               width: double.infinity,
             ),
             Container(
